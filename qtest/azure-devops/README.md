@@ -94,7 +94,7 @@ Please follow [these steps](https://documentation.tricentis.com/qtest/od/en/cont
 
 ### Constant "ManagerURL"
 
-The qTest Manager URL unique to your organization.
+The qTest Manager URL unique to your organization. DO NOT INCLUDE THE HTTP:// in the value 
 
 Please follow [these steps](https://documentation.tricentis.com/qtest/od/en/content/pulse/constants/pulse_constants.htm#ManagerURL) to get the URL from qTest Manager.
 
@@ -125,6 +125,7 @@ E.g. if you see the URL `https://xxx.qtestnet.com/p/123456/portal/project#tab=re
 ### Constant "RequirementDescriptionFieldID"
 
 The id of the "Description" field of the Requirement in your qTest project where the work item details will be synchronized to. To get this value the Field API (/api/v3/projects/{Your Project ID}/settings/requirements/fields) needs to be called. 
+FOR EXAMPLE http://myqtest.qtestnet.com/api/v3/projects/123456/settings/requirements/fields
 
 ### Constant "AllowCreationOnUpdate"
 
@@ -147,11 +148,13 @@ The URL has to have the form `https://dev.azure.com/[YOUR AZDO ORGANIZATION]/[YO
 
 ### Constant "DefectSummaryFieldID"
 
-The id of the "Summary" field of the Defect in your qTest project where the work item details of Bugs will be synchronized to. To get this value the Field API (/api/v3/fields/defects) needs to be called. 
+The id of the "Summary" field of the Defect in your qTest project where the work item details of Bugs will be synchronized to. To get this value the Field API (/api/v3/projects/{Your Project ID}/settings/defect/fields)  needs to be called. 
+FOR EXAMPLE http://myqtest.qtestnet.com/api/v3/projects/123456/settings/defects/fields
 
 ### Constant "DefectDescriptionFieldID"
 
-The id of the "Description" field of the Defect in your qTest project where the work item details of Bugs will be synchronized to. To get this value the Field API (/api/v3/fields/defects) needs to be called. 
+The id of the "Description" field of the Defect in your qTest project where the work item details of Bugs will be synchronized to. To get this value the Field API (/api/v3/projects/{Your Project ID}/settings/defect/fields)  needs to be called. 
+FOR EXAMPLE http://myqtest.qtestnet.com/api/v3/projects/123456/settings/defects/fields
 
 ## Limitations
 
